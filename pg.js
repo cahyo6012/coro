@@ -13,7 +13,7 @@ const client  = new Client({
 
 client.connect()
 
-client.query('SELECT NOW()', (err, res), {
+client.query('SELECT NOW()', (err, res) => {
   console.log(err ? err.stack : res.rows[0])
   client.end()
 })

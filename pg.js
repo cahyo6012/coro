@@ -1,5 +1,5 @@
 require('dotenv').config()
-const { Cient } = require('pg')
+const { Client } = require('pg')
 
 const { USERNAME, PASSWORD } = process.env
 
